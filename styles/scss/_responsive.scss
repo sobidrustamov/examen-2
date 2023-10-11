@@ -235,6 +235,13 @@
     }
   }
 
+  #dropdown-menu {
+    .search {
+      // max-width: 100%;
+      display: none;
+    }
+  }
+
   #showcase {
     height: 650px;
     .container {

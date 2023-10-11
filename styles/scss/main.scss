@@ -145,6 +145,7 @@ section {
     gap: 12px;
     width: 100%;
     height: 48px;
+    overflow: hidden;
 
     input {
       border: none;
@@ -156,6 +157,7 @@ section {
     width: 100%;
     border-radius: 46px;
     text-align: center;
+    overflow: hidden;
   }
 }
 
