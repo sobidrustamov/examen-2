@@ -1,0 +1,59 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-inline: 10px;
+}
+
+$sides: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: inline,
+  y: block,
+);
+
+@each $key, $side in $sides {
+  @for $index from 0 to 6 {
+    .m#{$key}-#{$index} {
+      margin-#{$side}: $index * 0.5rem;
+    }
+
+    .p#{$key}-#{$index} {
+      padding-#{$side}: $index * 0.5rem;
+    }
+  }
+}
+
+.btn {
+  all: unset;
+  box-sizing: border-box;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+  &:hover {
+    box-shadow: 0 0 25px #0008;
+  }
+}
+
+.btn-light {
+  border-radius: 57px;
+  border: 1.5px solid $primary-color;
+}
+
+.btn-dark {
+  border-radius: 57px;
+  background: $primary-dark;
+  color: $white-color;
+}
+i {
+  margin-left: 8px;
+}
+
+.text-center {
+  text-align: center;
+}

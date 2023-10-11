@@ -1,0 +1,77 @@
+#adoption {
+  height: 378px;
+  .container {
+    // display: block;
+    align-items: center;
+    background: $secondary-dark;
+    margin-block: 60px;
+    border-radius: 20px;
+    position: relative;
+
+    .explore-info {
+      padding-left: 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      flex: 1;
+
+      .adop-1,
+      .absolute {
+        position: absolute;
+        top: 40px;
+      }
+      .adop-1 {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  h1 {
+    color: $primary-dark;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    color: $primary-dark;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+  }
+
+  p {
+    width: 490px;
+    color: $text-color;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .btns {
+    display: flex;
+    gap: 20px;
+  }
+
+  .explore-img {
+    display: flex;
+    flex: 1;
+    height: 378px;
+
+    .adop-2 {
+      bottom: 0;
+      right: 0;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

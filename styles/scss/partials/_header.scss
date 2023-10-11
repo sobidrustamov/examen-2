@@ -1,0 +1,75 @@
+@import "../base/reset";
+
+header#main-header {
+  padding: 28px 0;
+  position: relative;
+  z-index: 9990;
+
+  .container {
+    @extend .justify-between, .align-center;
+  }
+
+  #menu {
+    display: none;
+  }
+  .navbar {
+    @extend .flex, .justify-between, .align-center;
+    gap: 48px;
+
+    ul.nav-list {
+      @extend .flex;
+      gap: 48px;
+    }
+
+    .nav-list-item {
+      font-size: 16px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+
+  .right {
+    @extend .flex, .align-center, .justify-between;
+    gap: 14px;
+    .search {
+      @extend .flex;
+
+      height: 48px;
+      gap: 12px;
+      padding: 13px 20px 13px 16px;
+      background-color: $white-color;
+      border-radius: 46px;
+      line-height: 24px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+    }
+
+    .lang {
+      padding-left: 32px;
+    }
+    input[type="checkbox"]:checked + .lang-down {
+      visibility: visible;
+    }
+
+    .lang-down {
+      position: absolute;
+      right: 150px;
+      visibility: hidden;
+      top: 80px;
+
+      li {
+        padding: 16px 32px;
+        color: $secondary-color;
+        background-color: $primary-dark;
+        border-bottom: 1px solid $white-color;
+      }
+      :hover {
+        background: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}

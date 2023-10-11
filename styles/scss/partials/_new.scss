@@ -1,0 +1,21 @@
+#new {
+  .cards + a.btn {
+    display: none;
+  }
+
+  span.bold {
+    color: var(--neutral-color-60, #667479);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 150% */
+  }
+
+  span.norm {
+    color: var(--neutral-color-60, #667479);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+  }
+}
