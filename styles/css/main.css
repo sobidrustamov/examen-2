@@ -929,7 +929,7 @@ section .title h2 {
   color: #fff;
   padding-inline: 37px;
   padding-top: 15px;
-  z-index: 9000;
+  z-index: 9999;
   transition: all 0.5s ease-in-out;
 }
 .dropdown-menu li {
@@ -1167,6 +1167,9 @@ input[type=checkbox]:checked + .dropdown-menu {
   .container {
     width: 400px;
     padding-inline: 16px;
+  }
+  #main-header .container {
+    width: 90%;
   }
   #showcase {
     height: 650px;

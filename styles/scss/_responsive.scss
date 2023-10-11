@@ -229,6 +229,11 @@
     width: 400px;
     padding-inline: 16px;
   }
+  #main-header {
+    .container {
+      width: 90%;
+    }
+  }
 
   #showcase {
     height: 650px;
