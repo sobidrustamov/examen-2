@@ -2,6 +2,12 @@
   .container {
     width: 736px;
   }
+
+  input[type="checkbox"]:checked + .dropdown-menu {
+    transform: translateX(0%);
+    width: 50%;
+    display: block;
+  }
   header#main-header {
     // .position-bg-2 {
     //   display: block;
@@ -235,11 +241,10 @@
     }
   }
 
-  #dropdown-menu {
-    .search {
-      // max-width: 100%;
-      display: none;
-    }
+  input[type="checkbox"]:checked + .dropdown-menu {
+    transform: translateX(0%);
+    width: 70%;
+    display: block;
   }
 
   #showcase {

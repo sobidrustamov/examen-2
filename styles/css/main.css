@@ -925,7 +925,7 @@ section .title h2 {
   position: fixed;
   inset: 0;
   background: #002a48;
-  width: 45%;
+  width: 55%;
   color: #fff;
   padding-inline: 37px;
   padding-top: 15px;
@@ -968,7 +968,6 @@ section .title h2 {
 }
 
 input[type=checkbox]:checked + .dropdown-menu {
-  transform: translateX(0%);
   display: block;
 }
 
@@ -1002,6 +1001,11 @@ input[type=checkbox]:checked + .dropdown-menu {
 @media (max-width: 1240px) {
   .container {
     width: 736px;
+  }
+  input[type=checkbox]:checked + .dropdown-menu {
+    transform: translateX(0%);
+    width: 50%;
+    display: block;
   }
   header#main-header #menu {
     display: block;
@@ -1173,8 +1177,10 @@ input[type=checkbox]:checked + .dropdown-menu {
   #main-header .container {
     width: 90%;
   }
-  #dropdown-menu .search {
-    display: none;
+  input[type=checkbox]:checked + .dropdown-menu {
+    transform: translateX(0%);
+    width: 70%;
+    display: block;
   }
   #showcase {
     height: 650px;
